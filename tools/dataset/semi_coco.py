@@ -43,7 +43,6 @@ def prepare_coco_data(seed=1, percent=10.0, version=2017, seed_offset=0):
         new_anno = {}
         new_anno["images"] = images
         new_anno["annotations"] = annotations
-        new_anno["licenses"] = anno["licenses"]
         new_anno["categories"] = anno["categories"]
         new_anno["info"] = anno["info"]
         path = "{}/{}".format(COCOANNODIR, "semi_supervised")
